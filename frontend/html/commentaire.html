@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Messages</title>
+		<meta name="description" content="Message" />
+		<meta      name="viewport"      content="width=device-width, initial-scale=1.0, viewport-fit=cover"    />
+		<!--Open Graph-->
+		<meta property="og:url" content="https://ivan-grossmann.dev/Groupomania/"/>
+		<meta property="og:title" content="Groupomania">
+		<meta property="og:description" content="Intranet de l'entreprise Groupomania. Spécialiste de la grande distribution.">
+		<meta property="og:image" content=" https://ivan-grossmann.dev/Groupomania/images/logo2.png" />
+		<!--Open Graph END-->
+		<link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+		<link rel="stylesheet" type="text/css" href="../css/style-min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/media-min.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="page-container">
+			<header>
+				<div class="header">
+					<a href="accueil.html" class="accueil"            ><img src="../images/logo3.png" alt="Logo Groupomania"          /></a>
+					<nav>
+						<div class="header-lien">
+							<ul class="header-navigation">
+								<li class="nav-item"><a class="nav-link" href="accueil.html">Accueil</a></li>
+								<li class="nav-item"><a class="nav-link" href="post.html">Messagerie</a></li>
+							</ul>
+						</div>
+					</nav>
+					<button class="logout" type="button" name="logout">            Déconnexion          </button>
+				</div>
+			</header>
+			<main>
+				<div id="single-message">
+					<div id="fiche-message">
+						<h1>Les Messages</h1>
+						<div class="cadre">
+							<div id="info_message">
+								<div class="info-single-message">
+									<p id="user-single-message"></p>
+									<p id="date-single-message"></p>
+								</div>
+								<h2 id="titre-single-message"></h2>
+								<p id="texte-single-message"></p>
+								<div id="image-single-message"></div>
+								<div id="action-button-message"></div>
+							</div>
+						</div>
+					</div>
+					<div id="fiche-commentaire">
+						<h3>Les commentaires</h3>
+						<p id="nbre-comment">
+							<span id="nbr-commentaires"></span>
+							 commentaires            
+						</p>
+						<div class="cadre">
+							<div id="page-form-commentaire">
+								<div class="cadre">
+									<form                    method="post"                    name="form-commentaire"                    id="form-commentaire"                  >
+										<div class="form-group">
+											<div class="form-group">
+												<label for="new-commentaire">                          Nouveau commentaire                        </label>
+												<textarea                          id="new-commentaire"                          name="new-commentaire"                          class="form-control"                          rows="10"                          cols="50"                          required                          autofocus                          placeholder="Rédigez votre commentaire ici..."                        ></textarea>
+											</div>
+											<button                        id="valider-commentaire"                        type="submit"                        name="valider-commentaire"                      >                        valider votre commentaire                      </button>
+										</div>
+									</form>
+								</div>
+								<div id="info_commentaire"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<div class="footer">
+					<p>
+						Projet 7 - Parcours Developpeur Web
+					</p>
+					<p>
+						Ivan Grossmann
+					</p>
+				</div>
+			</footer>
+		</div>
+		<script src="../js/authFront.js"></script>
+		<script src="../js/commentaire.js" defer></script>
+		<script src="../js/logout.js" defer></script>
+		<script src="../js/getMessage.js"></script>
+		<script>
+			      getOneMessage();
+		</script>
+		<script src="../js/getCommentaire.js"></script>
+		<script>
+			      getAllCommentaires();
+		</script>
+	</body>
+</html>

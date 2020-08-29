@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Liste des utilisateurs</title>
+		<meta name="description" content="Liste users - Groupomania Intranet" />
+		<meta      name="viewport"      content="width=device-width, initial-scale=1.0, viewport-fit=cover"    />
+		<!--Open Graph-->
+		<meta property="og:url" content="https://ivan-grossmann.dev/Groupomania/"/>
+		<meta property="og:title" content="Groupomania">
+		<meta property="og:description" content="Intranet de l'entreprise Groupomania. Spécialiste de la grande distribution.">
+		<meta property="og:image" content=" https://ivan-grossmann.dev/Groupomania/images/logo2.png" />
+		<!--Open Graph END-->
+		<link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+		<link rel="stylesheet" type="text/css" href="../css/style-min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/media-min.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="page-container">
+			<header>
+				<div class="header">
+					<a href="accueil.html" class="accueil"            ><img src="../images/logo3.png" alt="Logo Groupomania"          /></a>
+					<nav>
+						<div class="header-lien">
+							<ul class="header-navigation">
+								<li class="nav-item"><a class="nav-link" href="accueil.html">Accueil</a></li>
+								<li class="nav-item"><a class="nav-link" href="post.html">Messagerie</a></li>
+							</ul>
+						</div>
+					</nav>
+					<button class="logout" type="button" name="logout">            Déconnexion          </button>
+				</div>
+			</header>
+			<main>
+				<div id="page-liste-user">
+					<h1>Liste des utilisateurs</h1>
+					<div id="liste-user"></div>
+				</div>
+			</main>
+			<footer>
+				<div class="footer">
+					<p>
+						Projet 7 - Parcours Developpeur Web
+					</p>
+					<p>
+						Ivan Grossmann
+					</p>
+				</div>
+			</footer>
+		</div>
+		<script src="../js/authFront.js"></script>
+		<script src="../js/authAdmin.js" defer></script>
+		<script src="../js/listeUser.js"></script>
+		<script>
+			      getAllUsers();
+		</script>
+		<script src="../js/logout.js" defer></script>
+	</body>
+</html>

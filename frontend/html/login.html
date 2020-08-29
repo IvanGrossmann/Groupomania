@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Page de connexion</title>
+		<meta name="description" content="Page de connexion" />
+		<meta      name="viewport"      content="width=device-width, initial-scale=1.0, viewport-fit=cover"    />
+		<!--Open Graph-->
+		<meta property="og:url" content="https://ivan-grossmann.dev/Groupomania/"/>
+		<meta property="og:title" content="Groupomania">
+		<meta property="og:description" content="Intranet de l'entreprise Groupomania. Spécialiste de la grande distribution.">
+		<meta property="og:image" content=" https://ivan-grossmann.dev/Groupomania/images/logo2.png" />
+		<!--Open Graph END-->
+		<link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+		<link rel="stylesheet" type="text/css" href="../css/style-min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/media-min.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="page-container">
+			<header>
+				<div class="header">
+					<div class="logo">
+						<a href="accueil.html" class="accueil"              ><img src="../images/logo3.png" alt="Logo Groupomania"            /></a>
+					</div>
+					<nav>
+						<div class="header-lien">
+							<ul class="header-navigation">
+								<li class="nav-item"><a class="nav-link" href="login.html">Connexion</a></li>
+								<li class="nav-item"><a class="nav-link" href="creation-compte.html"                    >Inscription</a                  ></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<main class="fond">
+				<div class="form-user">
+					<h1>Connexion à votre compte</h1>
+					<form method="post" name="formConexxion" id="form_login">
+						<div class="form-group">
+							<label for="email-login">                Adresse email :              </label>
+							<input                type="email"                id="email-login"                name="email-login"                class="form-control"                required                placeholder="Mon adresse mail"              />
+						</div>
+						<div class="form-group">
+							<label for="pass-login">                Mot de passe :              </label>
+							<input                type="password"                id="pass-login"                name="pass-login"                class="form-control"                required                placeholder="Mon mot de passe"              />
+						</div>
+						<button id="connexion" type="submit" name="connexion">              Connexion            </button>
+					</form>
+				</div>
+			</main>
+			<footer>
+				<div class="footer">
+					<p>
+						Projet 7 - Parcours Developpeur Web
+					</p>
+					<p>
+						Ivan Grossmann
+					</p>
+				</div>
+			</footer>
+		</div>
+		<script src="../js/login.js" defer></script>
+	</body>
+</html>

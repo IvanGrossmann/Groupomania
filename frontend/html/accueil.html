@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Page d'accueil</title>
+		<meta name="description" content="Page d'accueil | Intranet de Groupomania" />
+		<meta      name="viewport"      content="width=device-width, initial-scale=1.0, viewport-fit=cover"    />
+		<!--Open Graph-->
+		<meta property="og:url" content="https://ivan-grossmann.dev/Groupomania/"/>
+		<meta property="og:title" content="Groupomania">
+		<meta property="og:description" content="Intranet de l'entreprise Groupomania. Spécialiste de la grande distribution.">
+		<meta property="og:image" content=" https://ivan-grossmann.dev/Groupomania/images/logo2.png" />
+		<!--Open Graph END-->
+		<link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+		<link rel="stylesheet" type="text/css" href="../css/style-min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/media-min.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="page-container">
+			<header>
+				<div class="header">
+					<a href="accueil.html" class="accueil"            ><img src="../images/logo3.png" alt="Logo Groupomania"          /></a>
+					<button class="logout" type="button" name="logout">            Se déconnecter          </button>
+				</div>
+			</header>
+			<main>
+				<div id="voir-profil">
+					<div id="masquer-profil">
+						<a href="#voir-profil" class="voir-profil">Mon profil</a>
+						<a href="#masquer-profil" class="masquer-profil">Cacher mon profil</a>
+						<div class="profil">
+							<h1>Mon profil</h1>
+							<div id="profil-name">
+								<p>
+									Nom :
+								</p>
+								<p id="profil_nom"></p>
+							</div>
+							<div id="profil-firstname">
+								<p>
+									Prénom :
+								</p>
+								<p id="profil_prenom"></p>
+							</div>
+							<div id="profil-role">
+								<p>
+									Mon rôle :
+								</p>
+								<p id="profil_role"></p>
+							</div>
+							<div id="profil-mail">
+								<p>
+									Adresse mail :
+								</p>
+								<p id="profil_email"></p>
+							</div>
+							<div id="profil-button">
+								<button                  id="suppression-compte"                  type="button"                  name="suppression-compte"                >                  Suppression du compte                </button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav>
+					<div class="menu-lien">
+						<ul class="menu-navigation">
+							<li class="nav-menu" id="menu-intranet">
+								<a id="message_select" href="post.html">Les messages</a>
+								<p>
+									Cliquez pour acceder aux messages.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</main>
+			<footer>
+				<div class="footer">
+					<p>
+						Projet 7 - Parcours Developpeur Web
+					</p>
+					<p>
+						Ivan Grossmann
+					</p>
+				</div>
+			</footer>
+		</div>
+		<script src="../js/authFront.js" defer></script>
+		<script src="../js/profil.js" defer></script>
+		<script src="../js/deleteUser.js" defer></script>
+		<script src="../js/logout.js" defer></script>
+	</body>
+</html>
