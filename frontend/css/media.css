@@ -62,6 +62,9 @@
     footer{
         height: auto;
     }
+    footer p{
+        margin: 0;
+    }
     .form-user{
         padding: 0;
     }
